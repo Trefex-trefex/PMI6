@@ -20,7 +20,7 @@
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>17.0</VCProjectVersion>
-    <ProjectGuid>{41CA5455-9B7F-4E66-B3B4-C7F887D56F9E}</ProjectGuid>
+    <ProjectGuid>{C9C45490-E97F-483D-8788-B168CCA9918A}</ProjectGuid>
     <Keyword>Win32Proj</Keyword>
     <RootNamespace>UnitTest1</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
@@ -99,8 +99,8 @@
     </ClCompile>
     <Link>
       <SubSystem>Windows</SubSystem>
-      <AdditionalLibraryDirectories>C:\Users\misha\source\repos\lab2\lab2\Debug;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
-      <AdditionalDependencies>digits.obj;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>$(VCInstallDir)UnitTest\lib;C:\Users\misha\source\repos\lab2.1\lab2.1\Debug;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>Functions.obj;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
@@ -169,8 +169,8 @@
     <ClInclude Include="pch.h" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\lab2\lab2.vcxproj">
-      <Project>{36dfcb16-06dd-4fb8-920f-1004cccd7f61}</Project>
+    <ProjectReference Include="..\lab2.1\lab2.1.vcxproj">
+      <Project>{e3ec1f2b-1628-49cc-ac96-f3a342f178ba}</Project>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
